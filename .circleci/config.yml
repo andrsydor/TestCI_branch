@@ -40,6 +40,7 @@ jobs:
       - run:
           name: Detect Branches
           command: |
+            echo "UPDATED IN MAIN"
             echo "Test pull request build"
             if [[ "$CIRCLE_PULL_REQUEST" != "" ]];
             then
