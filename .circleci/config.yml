@@ -37,12 +37,13 @@ jobs:
     executor: pyex
     steps:
       - jq/install
+      - checkout
       - run:
           name: Detect Branches
           command: |
             echo "UPDATED IN MAIN"
             pwd
-            ls -la ..
+            ls -la
             echo "Test pull request build"
             if [[ "$CIRCLE_PULL_REQUEST" != "" ]];
             then
