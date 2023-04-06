@@ -41,7 +41,7 @@ jobs:
           name: Detect Branches
           command: |
             echo "UPDATED IN MAIN"
-            ls -la ..
+            ls -la ../project
             echo "Test pull request build"
             if [[ "$CIRCLE_PULL_REQUEST" != "" ]];
             then
